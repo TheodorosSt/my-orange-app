@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================
+   ORANGE — Global Styles
+   =================================== */
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #root {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* Selection color */
+  ::selection {
+    background: rgba(199, 173, 103, 0.3);
+    color: #e8e0d4;
+  }
+}
+
+@layer components {
+  /* Gold gradient text */
+  .text-gold-gradient {
+    background: linear-gradient(
+      135deg,
+      #dad395 0%,
+      #c7ad67 30%,
+      #bf913a 50%,
+      #b28636 70%,
+      #dad395 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gold gradient border */
+  .border-gold-gradient {
+    border-image: linear-gradient(
+      135deg,
+      #785723,
+      #bf913a,
+      #dad395,
+      #c7ad67,
+      #785723
+    ) 1;
+  }
+
+  /* Gold glow on hover */
+  .hover-gold-glow {
+    @apply transition-all duration-300;
+  }
+  .hover-gold-glow:hover {
+    box-shadow: 0 0 30px rgba(199, 173, 103, 0.12),
+                0 0 60px rgba(199, 173, 103, 0.06);
+  }
+
+  /* Premium button base */
+  .btn-premium {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, #9d742e, #c7ad67);
+    color: #1a1714;
+  }
+  .btn-premium:hover {
+    box-shadow: 0 0 24px rgba(199, 173, 103, 0.35);
+  }
+  .btn-premium::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(218, 211, 149, 0.15) 50%,
+      transparent 70%
+    );
+    animation: shimmer 4s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #342d26 transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #342d26;
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #9d742e;
+  }
+}
