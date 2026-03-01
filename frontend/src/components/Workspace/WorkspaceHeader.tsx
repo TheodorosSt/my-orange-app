@@ -115,7 +115,7 @@ export function WorkspaceHeader() {
     <header className="h-14 min-h-[56px] flex items-center justify-between px-6 border-b border-orange-border bg-orange-bg-secondary">
       {/* Left: Service info */}
       <div className="flex items-center gap-3">
-        <img src={service.icon} alt="" className="w-7 h-7 object-contain" />
+        <img src={service.icon} alt="" className="w-9 h-9 object-contain" />
         <h2 className="text-base font-semibold text-orange-text-primary">
           {service.title}
         </h2>

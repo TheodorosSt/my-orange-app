@@ -220,7 +220,7 @@ function ServicesSection() {
                   <img
                     src={svc.image}
                     alt={svc.title}
-                    className="w-16 h-16 object-contain drop-shadow-[0_0_8px_rgba(199,173,103,0.15)]"
+                    className="w-24 h-24 object-contain drop-shadow-[0_0_10px_rgba(199,173,103,0.2)]"
                   />
                 </div>
                 <div className="flex-1">

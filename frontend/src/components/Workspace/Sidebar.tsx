@@ -65,7 +65,7 @@ export function Sidebar() {
                 src={service.icon}
                 alt={service.title}
                 className={clsx(
-                  'w-[26px] h-[26px] object-contain transition-all duration-200',
+                  'w-[32px] h-[32px] object-contain transition-all duration-200',
                   isActive
                     ? 'opacity-100 drop-shadow-[0_0_4px_rgba(199,173,103,0.3)]'
                     : 'opacity-45 hover:opacity-70',

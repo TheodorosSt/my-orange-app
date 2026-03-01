@@ -31,7 +31,7 @@ export function ServiceTile({ service, isActive, onClick }: ServiceTileProps) {
       whileTap={{ scale: 0.97 }}
       onClick={onClick}
       className={clsx(
-        'relative group w-full text-left rounded-2xl p-6 pt-8 overflow-hidden',
+        'relative group w-full text-left rounded-2xl p-5 pt-6 overflow-hidden',
         'border transition-all duration-300 cursor-pointer',
         'bg-orange-bg-secondary',
         isActive
@@ -49,11 +49,11 @@ export function ServiceTile({ service, isActive, onClick }: ServiceTileProps) {
       />
 
       {/* Icon */}
-      <div className="relative z-10 w-[72px] h-[72px] mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+      <div className="relative z-10 w-[100px] h-[100px] mx-auto mb-3 transition-transform duration-300 group-hover:scale-110">
         <img
           src={service.icon}
           alt={service.title}
-          className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(199,173,103,0.15)]"
+          className="w-full h-full object-contain drop-shadow-[0_0_12px_rgba(199,173,103,0.2)]"
         />
       </div>
 
