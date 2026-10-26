@@ -1,5 +1,35 @@
+# Private environment files — keep public examples
 .env
+.env.*
+!.env.example
+!.env.*.example
+env.local
+env.production
+env.production.local
 
-credentials/google-sa.json
+# Local credentials and private keys
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*service-account*.json
+*service_account*.json
 
+# Dependencies and generated artifacts
 node_modules/
+dist/
+build/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Local databases, logs, and OS files
+*.db
+*.sqlite3
+*.log
+.DS_Store
