@@ -59,9 +59,9 @@ export function AdminDashboard() {
             { name: 'Supabase (Vault)', status: 'healthy', latencyMs: 45, requestsToday: 312 },
           ],
           recentActivity: [
-            { user: 'maria@law.gr', action: 'OCR Processing', service: 'ocr', timestamp: '2 min ago' },
-            { user: 'george@pub.gr', action: 'Batch Translation', service: 'translate', timestamp: '5 min ago' },
-            { user: 'athena@media.gr', action: 'Audiobook Generated', service: 'audiobook', timestamp: '12 min ago' },
+            { user: 'demo.user1@example.com', action: 'OCR Processing', service: 'ocr', timestamp: '2 min ago' },
+            { user: 'demo.user2@example.com', action: 'Batch Translation', service: 'translate', timestamp: '5 min ago' },
+            { user: 'demo.user3@example.com', action: 'Audiobook Generated', service: 'audiobook', timestamp: '12 min ago' },
           ],
         });
       } finally {
